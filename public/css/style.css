@@ -1,0 +1,337 @@
+.bgwrap {
+    padding : 100px 20px;
+}
+
+img.profile {
+    background: #fff;
+    border: 3px solid#06D6A0;
+    padding: 3px;
+}
+
+.profile-body.warga {
+    position: relative;
+    top: -30px;
+}
+.vshow{
+    visibility: visible;
+}
+
+.vhide{
+    visibility: hidden;
+}
+
+.warga-menu {
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 0;
+    max-width: 33.3%;
+    width: 100%;
+}
+
+.warga-menu p {
+    font-size: 12px;
+    line-height: 1.2em;
+    padding-top: 10px;
+}
+
+.fitur-warga {
+    padding-top: 20px;
+}
+
+.pengumuman-item {
+    color: #073B4C;
+    font-weight: 400;
+}
+
+.pengumuman-item a {
+    color : #06D6A0;
+}
+
+.navbarmenumobile {
+    position: sticky!important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-light.sticky-bottom.navbarmenumobile {
+    background: #fff!important;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15)!important;
+}
+
+nav.menu-wrap {
+    padding: 0 10px;
+}
+
+.page-wrapper.warga .navbar {
+    width: 100%!important;
+    height: 75px!important;
+}
+
+a.nav-link {
+    color: #028563;
+}
+
+a.nav-link.active {
+    padding: 10px 20px;
+    background: #06d6a02b;
+    border-radius: 20px;
+}
+
+a.nav-link p {
+    display: none;
+}
+
+a.nav-link.active p {
+    font-size: 12px;
+    align-self: center;
+    padding-left: 15px;
+    display: block;
+    font-weight: 600;
+}
+
+.profile-body.warga-profile{
+    top: 0;
+    margin-top: 50px;
+}
+
+.image-profile-bg {
+    background-size: contain;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body.profile p {
+    font-size: 12px;
+    color: #555;
+}
+
+.profile-detail {
+    margin-top: 30px;
+}
+
+.accordion-item {
+    margin: 10px 0;
+}
+
+.text-abu {
+    color: #555;
+}
+
+p.text-abu.title-profile {
+    font-size: 12px;
+}
+
+button.accordion-button {
+    font-weight: 500;
+    color: #073B4C;
+    font-size: 12px;
+}
+
+.item-profile h6 {
+    color: #073B4C;
+}
+
+.notifikasi-body.warga {
+    margin-top: 50px;
+}
+
+a.notifikasi.d-flex.nav-link.active {
+    margin-left: -20px;
+}
+
+.sidebar .sidebar-body .nav .nav-item {
+    padding-bottom: 20px!important;
+}
+
+.button-logout {
+    padding: 15px;
+    background: #06D6A0;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.button-logout a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.profile-detail button.logout {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.news-body.warga {
+    margin-top: 20px;
+}
+
+.news-body.warga .featured-image {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.news-body.warga .featured-image img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.category-berita {
+    background: #06d6a02b;
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #06d6a0;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    width: 40%;
+    margin : 10px 0;
+}
+
+.body-berita h6 {
+    align-self: center;
+}
+
+.body-berita h6 a {
+    color: #06d6a0;
+}
+
+.desc-berita p {
+    white-space: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 4em;
+    line-height: 1.4em;
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.berita-konten-wrap {
+    padding-bottom: 50px;
+}
+
+.body-berita h6 a.judul-single {
+    color: #06d6a0;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.desc-berita-full p {
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #555;
+}
+
+.featured-image-single img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text-nama {
+    margin-left : 20px;
+}
+
+.text-nama p {
+    font-weight : 700;
+    letter-spacing : 2;
+}
+
+.text-nama p img {
+    margin-top : -10px;
+}
+
+.image-status-zakat img {
+    max-width : 100%;
+}
+
+.belumbayar {
+    padding: 15px;
+    background: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.sudahbayar {
+    padding: 15px;
+    background: #048b3f;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.imageswidth {
+    max-width: 100%;
+}
+
+canvas#myChart {
+    height: 400px!important;
+    width: 400px!important;
+    margin: 0 auto!important;
+}
+
+.warga-menu.disabled {
+    opacity: 0.5;
+}
+
+.banner-carousel-wrap {
+    position: relative;
+    top: -60px;
+}
+
+.owl-carousel .owl-stage-outer {
+    border-radius: 20px;
+}
+
+div#slider-home {
+    position: relative;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #06D6A0!important;
+    width: 40px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 4px;
+    background: #fff!important;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+
+.owl-carousel .owl-item {
+    height: 170px;
+}
+
+.owl-item .item {
+    height: 100%;
+}
+
+.owl-carousel .owl-item img {
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: right;
+}
