@@ -92,7 +92,7 @@
                     </div>
                     <div class="fitur-warga d-flex justify-content-between">
                         <div class="warga-menu disabled">
-                            <a href="{{ url('/voting')}}">
+                            <a href="#">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/umkm.svg') }}" alt="">
                                 </div>
@@ -100,7 +100,7 @@
                             <p>UMKM</p>
                         </div>
                         <div class="warga-menu disabled">
-                            <a href="{{ url('/writer')}}">
+                            <a href="#">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/wargadatang.svg') }}" alt="">
                                 </div>
@@ -108,7 +108,7 @@
                             <p>Warga Pendatang</p>
                         </div>
                         <div class="warga-menu disabled">
-                            <a href="{{ url('/cekzakat') }}">
+                            <a href="#">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/wargapindah.svg') }}" alt="">
                                 </div>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="fitur-warga d-flex justify-content-between">
                         <div class="warga-menu disabled">
-                            <a href="{{ url('/voting')}}">
+                            <a href="#">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/bansos.svg') }}" alt="">
                                 </div>
@@ -126,7 +126,7 @@
                             <p>Bantuan Sosial</p>
                         </div>
                         <div class="warga-menu disabled">
-                            <a href="{{ url('/writer')}}">
+                            <a href="#">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/fitur_2.svg') }}" alt="">
                                 </div>
@@ -134,7 +134,7 @@
                             <p>Kendaraan Saya</p>
                         </div>
                         <div class="warga-menu disabled">
-                            <a href="{{ url('/cekzakat') }}">
+                            <a href="#">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/surat_pengantar.svg') }}" alt="">
                                 </div>
