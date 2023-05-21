@@ -57,7 +57,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item d-flex align-items-center" href="{{ route('berita.edit', $data->id) }}"><i data-feather="git-branch" class="icon-sm me-2"></i> <span class="">Edit</span></a>
                       <a class="dropdown-item d-flex align-items-center" href="{{ route('berita.show', $data->judul) }}"><i data-feather="eye" class="icon-sm me-2"></i> <span class="">View Detail</span></a>
-                      <form action="{{ route('banner.destroy', $data->id) }}" method="POST" id="delete_berita">
+                      <form action="{{ route('berita.destroy', $data->id) }}" method="POST" id="delete_berita">
                       @csrf
                       @method('DELETE')
                         <a class="dropdown-item d-flex align-items-center" href="#" onClick="formHapus()"><i data-feather="trash" class="icon-sm me-2"></i> <span class="">Delete</span></a>
