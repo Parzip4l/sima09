@@ -51,6 +51,9 @@ class WargaUpdateController extends Controller
             $user->tempatlahir = $request->tempatlahir;
             $user->statusperkawinan = $request->statusperkawinan;
             $user->email = $request->email;
+            $user->nama_ayah = $request->nama_ayah;
+            $user->nama_ibu = $request->nama_ibu;
+            $user->penghasilanperbulan = $request->penghasilanperbulan;
             $user->save();
     
             return redirect()->route('myprofile.index')->with('success', 'Data Anda Berhasil Diupdate.');

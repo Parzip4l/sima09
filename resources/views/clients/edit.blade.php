@@ -149,6 +149,27 @@
                 </div>
 
                 <div class="mb-3">
+                    <label for="exampleInputPlaceholder" class="form-label">Nama Ayah</label>
+                    <input type="text" class="form-control" name="nama_ayah" require value="{{ Auth::user()->nama_ayah }}">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPlaceholder" class="form-label">Nama Ibu</label>
+                    <input type="text" class="form-control" name="nama_ibu" require value="{{ Auth::user()->nama_ibu }}">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail3" class="form-label">Penghasilan Per Bulan</label>
+                    <select name="penghasilanperbulan" class="form-control">
+                        <option value="< 500000" {{ $user->penghasilanperbulan == '< 500000' ? 'selected' : '' }} >< 500000</option>
+                        <option value="500000 - 2500000" {{ $user->penghasilanperbulan == '500000 - 2500000' ? 'selected' : '' }}>500000 - 2500000</option>
+                        <option value="2500000 - 5000000" {{ $user->penghasilanperbulan == '2500000 - 5000000' ? 'selected' : '' }}>2500000 - 5000000</option>
+                        <option value="5000000 - 10000000" {{ $user->penghasilanperbulan == '5000000 - 10000000' ? 'selected' : '' }}>5000000 - 10000000</option>
+                        <option value="10000000 >" {{ $user->penghasilanperbulan == '10000000 >' ? 'selected' : '' }}>10000000 ></option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
                     <label for="exampleInputEmail3" class="form-label">Status Perkawinan</label>
                     <select name="statusperkawinan" class="form-control">
                         <option value="Kawin" {{ $user->statusperkawinan == 'Kawin' ? 'selected' : '' }} >Kawin</option>

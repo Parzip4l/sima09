@@ -74,6 +74,9 @@ class WargaController extends Controller
             'statusperkawinan'   => $request->statusperkawinan,
             'email'     => $request->email,
             'level'     => $request->level,
+            'nama_ayah'     => $request->nama_ayah,
+            'nama_ibu'     => $request->nama_ibu,
+            'penghasilanperbulan'     => $request->penghasilanperbulan,
             'password' => Hash::make($request->password)
         ]);
         
