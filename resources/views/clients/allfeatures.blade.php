@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <div class="fitur-warga d-flex justify-content-between">
                         <div class="warga-menu disabled">
-                            <a href="#">
+                            <a href="https://api.whatsapp.com/send?phone=6281120000999">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/wa.svg') }}" alt="">
                                 </div>
