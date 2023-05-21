@@ -26,7 +26,7 @@
                             <article id="post-{{ $berita->id }}">
                                 <div class="desc-berita-full">
                                     <p>
-                                        {{!! $berita->konten !!}}
+                                        {!! $berita->konten !!}
                                     </p>
                                 </div>
                             </article>
