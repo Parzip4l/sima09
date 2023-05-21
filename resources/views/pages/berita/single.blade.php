@@ -23,11 +23,13 @@
                                 </div>
                                 <h6 class="title-pengumuman"><a href="" class="judul-single">{{ $berita->judul }}</a></h6>
                             </div>
-                            <div class="desc-berita-full">
-                                <p>
-                                    {{$berita->konten}}
-                                </p>
-                            </div>
+                            <article id="post-{{ $berita->id }}">
+                                <div class="desc-berita-full">
+                                    <p>
+                                        {{!! $berita->konten !!}}
+                                    </p>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
