@@ -29,7 +29,7 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Konten</label>
-            <textarea class="form-control" name="konten" id="easyMdeExample" rows="10"></textarea>
+            <textarea class="form-control" name="konten" id="tinymceExample" rows="10"></textarea>
           </div>
 
           <div class="mb-3">
@@ -47,9 +47,9 @@
 @endsection
 
 @push('plugin-scripts')
-  <script src="{{ asset('assets/plugins/easymde/easymde.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/tinymce/tinymce.min.js') }}"></script>
 @endpush
 
 @push('custom-scripts')
-  <script src="{{ asset('assets/js/easymde.js') }}"></script>
+  <script src="{{ asset('assets/js/tinymce.js') }}"></script>
 @endpush

@@ -30,7 +30,7 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Konten</label>
-            <textarea name="konten" id="easyMdeExample" cols="30" rows="10" class="form-control">{{$berita->konten}}</textarea>
+            <textarea name="konten" id="tinymceExample" cols="30" rows="10" class="form-control">{{$berita->konten}}</textarea>
           </div>
 
           <div class="mb-3">
@@ -47,9 +47,9 @@
 @endsection
 
 @push('plugin-scripts')
-  <script src="{{ asset('assets/plugins/easymde/easymde.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/tinymce/tinymce.min.js') }}"></script>
 @endpush
 
 @push('custom-scripts')
-  <script src="{{ asset('assets/js/easymde.js') }}"></script>
+  <script src="{{ asset('assets/js/tinymce.js') }}"></script>
 @endpush
