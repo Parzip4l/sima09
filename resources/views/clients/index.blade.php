@@ -256,7 +256,7 @@
         $("#slider-home").owlCarousel({
 
             navigation : true, // Show next and prev buttons
-
+            autoplay : true,
             slideSpeed : 300,
             paginationSpeed : 400,
 
