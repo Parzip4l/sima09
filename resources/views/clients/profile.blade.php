@@ -161,10 +161,7 @@
                     <div class="accordion-body">
                         <div class="item-profile py-2">
                             <p class="text-abu title-profile">App Version</p>
-                            @php
-                                $latestTag = trim(shell_exec('git describe --abbrev=0 --tags'));
-                            @endphp
-                            <h6>{{ $latestTag }}</h6>
+                            <h6>2.4.0</h6>
                         </div>
                         <div class="item-profile py-2">
                             <a href="{{ url('/termsandconditions') }}"><p class="text-abu title-profile">Terms and Conditions</p></a>
