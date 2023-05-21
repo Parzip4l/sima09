@@ -1,10 +1,10 @@
 {
-    "name": "laravel/laravel",
+    "name": "SIMA09",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Sistem Informasi Margalaksana 09",
     "keywords": [
-        "framework",
-        "laravel"
+        "sima09",
+        "desadigital"
     ],
     "license": "MIT",
     "require": {
