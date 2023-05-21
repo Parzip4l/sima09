@@ -29,6 +29,11 @@
           </div>
 
           <div class="mb-3">
+            <label for="exampleInputNumber1" class="form-label">Deskripsi Singkat</label>
+            <textarea class="form-control" name="excerpt" id="" rows="10"></textarea>
+          </div>
+
+          <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Konten</label>
             <textarea name="konten" id="tinymceExample" cols="30" rows="10" class="form-control">{{$berita->konten}}</textarea>
           </div>

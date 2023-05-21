@@ -46,6 +46,7 @@ class BeritaController extends Controller
         
         $berita = new Berita();
         $berita->judul = $request->input('judul');
+        $berita->excerpt = $request->input('excerpt');
         $berita->konten = $request->input('konten');
         
         if ($request->hasFile('gambar')) {
@@ -125,6 +126,7 @@ class BeritaController extends Controller
         try {
             $berita = Berita::find($id);
             $berita->judul = $request->judul;
+            $berita->excerpt = $request->excerpt;
             $berita->konten = $request->konten;
             if ($request->hasFile('gambar')) {
                 $image = $request->file('gambar');
