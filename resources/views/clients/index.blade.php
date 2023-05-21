@@ -44,11 +44,13 @@
     <div class="container">
         <div class="d-md-block col-md-12 col-xl-12 left-wrapper">
             <div class="card rounded">
-                <div class="card-body">
-                    <div class="d-flex align-items-center align-self-center mb-2">
+                <div class="card-header">
+                    <div class="d-flex align-items-center align-self-center mb-0">
                         <i data-feather="users"></i>
                         <h5 class="card-title mb-0 mx-1">Layanan Publik</h6>
                     </div>
+                </div>
+                <div class="card-body">
                     <div class="fitur-warga d-flex justify-content-between">
                         <div class="warga-menu">
                             <a href="https://api.whatsapp.com/send?phone=6281120000999">
