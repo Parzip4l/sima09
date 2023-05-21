@@ -86,6 +86,18 @@
                             <p class="text-abu title-profile">Status Perkawinan</p>
                             <h6>{{ Auth::user()->statusperkawinan }}</h6>
                         </div>
+                        <div class="item-profile py-2">
+                            <p class="text-abu title-profile">Nama Ayah</p>
+                            <h6>{{ Auth::user()->nama_ayah }}</h6>
+                        </div>
+                        <div class="item-profile py-2">
+                            <p class="text-abu title-profile">Nama Ibu</p>
+                            <h6>{{ Auth::user()->nama_ibu }}</h6>
+                        </div>
+                        <div class="item-profile py-2">
+                            <p class="text-abu title-profile">Penghasilan per Bulan</p>
+                            <h6>{{ Auth::user()->penghasilanperbulan }}</h6>
+                        </div>
                     </div>
                 </div>
             </div>
