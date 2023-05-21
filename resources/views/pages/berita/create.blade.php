@@ -52,4 +52,4 @@
 
 @push('custom-scripts')
   <script src="{{ asset('assets/js/easymde.js') }}"></script>
-  @endpush
+@endpush
