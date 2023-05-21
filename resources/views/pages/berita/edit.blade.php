@@ -30,7 +30,7 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Konten</label>
-            <textarea name="konten" id="" cols="30" rows="10" class="form-control">{{$berita->konten}}</textarea>
+            <textarea name="konten" id="easyMdeExample" cols="30" rows="10" class="form-control">{{$berita->konten}}</textarea>
           </div>
 
           <div class="mb-3">
