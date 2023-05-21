@@ -259,6 +259,7 @@
             autoplay : true,
             slideSpeed : 300,
             paginationSpeed : 400,
+            loop : true,
 
             items : 1, 
             itemsDesktop : false,
