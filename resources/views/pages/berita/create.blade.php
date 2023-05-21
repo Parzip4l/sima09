@@ -1,5 +1,7 @@
 @extends('layout.master')
-
+@push('plugin-styles')
+  <link href="{{ asset('assets/plugins/easymde/easymde.min.css') }}" rel="stylesheet" />
+@endpush
 @section('content')
 <nav class="page-breadcrumb">
   <ol class="breadcrumb">
@@ -27,7 +29,7 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Konten</label>
-            <textarea name="konten" id="" cols="30" rows="10" class="form-control"></textarea>
+            <textarea class="form-control" name="konten" id="easyMdeExample" rows="10"></textarea>
           </div>
 
           <div class="mb-3">
@@ -43,3 +45,11 @@
   </div>
 </div>
 @endsection
+
+@push('plugin-scripts')
+  <script src="{{ asset('assets/plugins/easymde/easymde.min.js') }}"></script>
+@endpush
+
+@push('custom-scripts')
+  <script src="{{ asset('assets/js/easymde.js') }}"></script>
+  @endpush

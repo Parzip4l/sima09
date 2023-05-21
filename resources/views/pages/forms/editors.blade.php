@@ -2,7 +2,6 @@
 
 @push('plugin-styles')
   <link href="{{ asset('assets/plugins/easymde/easymde.min.css') }}" rel="stylesheet" />
-
 @endpush
 
 @section('content')
