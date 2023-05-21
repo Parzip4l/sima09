@@ -24,17 +24,17 @@
         @csrf
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">NIK</label>
-            <input type="number" class="form-control" name="nik" require>
+            <input type="number" class="form-control" name="nik" required>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">No KK</label>
-            <input type="number" class="form-control" name="nokk" require>
+            <input type="number" class="form-control" name="nokk" required>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">RW</label>
-            <input type="number" class="form-control" name="rw" require value="09" readonly>
+            <input type="number" class="form-control" name="rw" required value="09" readonly>
           </div>
 
           <div class="mb-3">
@@ -49,7 +49,7 @@
 
           <div class="mb-3">
             <label for="exampleInputText1" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap" require>
+            <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap" required>
           </div>
 
           <div class="mb-3">
@@ -119,12 +119,12 @@
 
           <div class="mb-3">
             <label for="exampleInputDisabled1" class="form-label">Tanggal Lahir</label>
-            <input type="date" class="form-control" name="tanggallahir" require>
+            <input type="date" class="form-control" name="tanggallahir" required>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputPlaceholder" class="form-label">Tempat Lahir</label>
-            <input type="text" class="form-control" name="tempatlahir" require>
+            <input type="text" class="form-control" name="tempatlahir" required>
           </div>
 
           <div class="mb-3">
@@ -139,12 +139,12 @@
 
           <div class="mb-3">
             <label for="exampleInputReadonly" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputReadonly" name="email" require>
+            <input type="email" class="form-control" id="exampleInputReadonly" name="email" required>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputReadonly" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputReadonly" name="password" require>
+            <input type="password" class="form-control" id="exampleInputReadonly" name="password" required>
           </div>
 
           <button class="btn btn-primary" type="submit">Simpan Data</button>
