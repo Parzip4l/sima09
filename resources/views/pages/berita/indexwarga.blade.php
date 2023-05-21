@@ -30,7 +30,7 @@
                                     <h6 class="title-pengumuman"><a href="{{ route('berita.show', $data->judul) }}">{{ $data->judul }}</a></h6>
                                 </div>
                                 <div class="desc-berita">
-                                    <p>{{$data->konten}}</p>
+                                    <p>{!! $data->konten !!}</p>
                                 </div>
                             </div>
                         
