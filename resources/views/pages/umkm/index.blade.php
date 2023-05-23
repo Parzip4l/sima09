@@ -22,7 +22,7 @@
     <div class="alert alert-danger">
         {{ session('error') }}
     </div>
-@endif
+  @endif
 <div class="row">
   <div class="col-md-12 grid-margin stretch-card">
     <div class="card">
@@ -51,6 +51,7 @@
                 <td>
                   <div class="d-flex">
                   <a href="#" class="btn btn-primary me-1">Lihat Detail</a>
+                  <a href="{{ route('umkm.edit', $data->id) }}" class="btn btn-warning me-1 text-white">Edit Data</a>
                     <form action="{{ route('umkm.destroy', $data->id) }}" method="POST">
                         @csrf
                         @method('DELETE')

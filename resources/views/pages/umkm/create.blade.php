@@ -3,7 +3,8 @@
 @section('content')
 <nav class="page-breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Additional Information</a></li>
+    <li class="breadcrumb-item"><a href="#">Master Data</a></li>
+    <li class="breadcrumb-item"><a href="#">UMKM</a></li>
     <li class="breadcrumb-item active" aria-current="page">Tambah Data</li>
   </ol>
 </nav>
@@ -12,7 +13,7 @@
   <div class="col-md-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-        <h6 class="card-title">Buat Pengumuman</h6>
+        <h6 class="card-title">Buat UMKM </h6>
         @if (session('error'))
             <div class="alert alert-danger">
                 {{ session('error') }}
@@ -22,12 +23,12 @@
         @csrf
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Nama Toko</label>
-            <input type="text" class="form-control" name="namatoko" required>
+            <input type="text" class="form-control" name="namatoko" placeholder="Toko ABC" required>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Nama Pemilik</label>
-            <input type="text" class="form-control" name="namapemilik" required>
+            <input type="text" class="form-control" name="namapemilik" placeholder="Fulan" required>
           </div>
 
           <div class="mb-3">
@@ -37,12 +38,12 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Alamat Toko</label>
-            <input type="text" class="form-control" name="alamattoko" required>
+            <input type="text" class="form-control" name="alamattoko" placeholder="Samping Kantor RW" required>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Deskripsi</label>
-            <input type="text" class="form-control" name="deskripsi" required>
+            <input type="text" class="form-control" name="deskripsi" placeholder="Menjual Segala Kebutuhan Anda" required>
           </div>
 
           <div class="mb-3">
@@ -60,37 +61,37 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Website</label>
-            <input type="text" class="form-control" name="website">
+            <input type="text" class="form-control" name="website" placeholder="www.namawebsite.com">
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Instagram</label>
-            <input type="text" class="form-control" name="instagram">
+            <input type="text" class="form-control" name="instagram" placeholder="www.instagram.com/namainstagram">
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Facebook</label>
-            <input type="url" class="form-control" name="facebook">
+            <input type="url" class="form-control" name="facebook" placeholder="www.facebook.com/namafacebook">
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Twitter</label>
-            <input type="text" class="form-control" name="twitter">
+            <input type="text" class="form-control" name="twitter" placeholder="www.twitter.com/namatwitter">
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Gojek</label>
-            <input type="text" class="form-control" name="gojek">
+            <input type="text" class="form-control" name="gojek" placeholder="url gofood">
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Grab</label>
-            <input type="text" class="form-control" name="grab">
+            <input type="text" class="form-control" name="grab" placeholder="url grabfood">
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Shopee</label>
-            <input type="text" class="form-control" name="shopee">
+            <input type="text" class="form-control" name="shopee" placeholder="url shopee Food">
           </div>
 
           <div class="mb-3">
