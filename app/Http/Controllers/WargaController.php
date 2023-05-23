@@ -49,8 +49,6 @@ class WargaController extends Controller
     public function store(Request $request)
     {
         try{
-
-        
         //validate form
         $this->validate($request, [
             'nik'     => 'required|unique:wargas',

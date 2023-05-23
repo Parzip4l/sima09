@@ -87,6 +87,12 @@
           <span class="link-title">Dokumen Control</span>
         </a>
       </li>
+      <li class="nav-item {{ active_class(['umkm']) }}">
+        <a href="{{ url('/umkm') }}" class="nav-link">
+          <i class="link-icon" data-feather="shopping-cart"></i>
+          <span class="link-title">UMKM</span>
+        </a>
+      </li>
       <li class="nav-item {{ active_class(['']) }}">
         <a href="{{ url('/') }}" class="nav-link">
           <i class="link-icon" data-feather="edit"></i>

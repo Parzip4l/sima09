@@ -135,6 +135,8 @@ Route::get('pengumuman/{id}/download', 'PengumumanController@download')->name('p
 Route::get('/berita/{id}', 'BeritaController@show')->name('berita.show');
 Route::get('/pengaduan/{id}', 'PengaduanController@show')->name('pengaduan.show');
 
+// UMKM
+Route::resource('/umkm', \App\Http\Controllers\UmkmController::class);
 
 Route::group(['prefix' => 'ui-components'], function(){
     Route::get('accordion', function () { return view('pages.ui-components.accordion'); });
