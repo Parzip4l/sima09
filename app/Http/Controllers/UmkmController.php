@@ -20,8 +20,12 @@ class UmkmController extends Controller
             if($user->level == '1'){
                 $data = Umkm::all();
                 return view ('pages.umkm.index', compact('data'));
+            }else if($user->level == '2'){
+                $data = Umkm::all();
+                $count = count($data);
+                return view ('pages.umkm.indexwarga', compact('data','count'));
             }else{
-                return redirect('login.index');
+                return redirect('pages.auth.login')->intended('login');
             }
         }
         

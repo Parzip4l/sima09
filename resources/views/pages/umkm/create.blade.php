@@ -32,7 +32,7 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Nomor HP</label>
-            <input type="text" class="form-control" name="nomorhp" required>
+            <input type="number" class="form-control" name="nomorhp" required>
           </div>
 
           <div class="mb-3">
@@ -95,7 +95,7 @@
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Whatsapp</label>
-            <input type="text" class="form-control" name="whatsapp" required>
+            <input type="number" class="form-control" name="whatsapp" required>
           </div>
 
           <button class="btn btn-primary" type="submit">Simpan Data</button>

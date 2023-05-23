@@ -91,8 +91,8 @@
                         </div>
                     </div>
                     <div class="fitur-warga d-flex justify-content-between">
-                        <div class="warga-menu disabled">
-                            <a href="#">
+                        <div class="warga-menu">
+                            <a href="{{ url('/umkm') }}">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/umkm.svg') }}" alt="">
                                 </div>
