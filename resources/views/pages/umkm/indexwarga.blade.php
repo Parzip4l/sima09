@@ -59,7 +59,7 @@
                             </div>
                             <hr>
                             <a href="https://api.whatsapp.com/send?phone=62{{ $d->nomorhp }}" class="btn btn-sm btn-success w-100 mb-2">Chat Whatsapp</a>
-                            <a href="#" class="btn btn-sm btn-primary w-100">Lihat Detail</a>
+                            <a href="{{ route('umkm.show', $d->id) }}" class="btn btn-sm btn-primary w-100">Lihat Detail</a>
                         </div>
                     </div>
                 </div>

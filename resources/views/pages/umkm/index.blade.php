@@ -50,7 +50,7 @@
                 <td>{{ $data->namapemilik}}</td>
                 <td>
                   <div class="d-flex">
-                  <a href="#" class="btn btn-primary me-1">Lihat Detail</a>
+                  <a href="{{ route('umkm.show', $data->id) }}" class="btn btn-primary me-1">Lihat Detail</a>
                   <a href="{{ route('umkm.edit', $data->id) }}" class="btn btn-warning me-1 text-white">Edit Data</a>
                     <form action="{{ route('umkm.destroy', $data->id) }}" method="POST">
                         @csrf

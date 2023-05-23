@@ -154,4 +154,23 @@ class UmkmController extends Controller
 
         return redirect()->route('umkm.index')->with('success', 'Data berhasil dihapus.');
     }
+
+    public function show($id)
+    {
+        if($user = Auth::user()){
+            if($user->level == '1'){
+                $data = Umkm::find($id);
+                if (!$data) {
+                    return abort(404);
+                }
+                return view('pages.umkm.show', compact('data'));
+            }elseif($user->level == '2'){
+                $data = Umkm::find($id);
+                if (!$data) {
+                    return abort(404);
+                }
+                return view('pages.umkm.showdetail', compact('data'));
+            }
+        }
+    }
 }
