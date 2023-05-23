@@ -105,12 +105,12 @@
                     </div>
                     <div class="fitur-warga d-flex justify-content-between">
                         <div class="warga-menu">
-                            <a href="{{ url('/voting')}}">
+                            <a href="{{ url('/umkm') }}">
                                 <div class="image-fitur">
-                                    <img src="{{ asset('assets/icons/fitur_6.svg') }}" alt="">
+                                    <img src="{{ asset('assets/icons/umkm.svg') }}" alt="">
                                 </div>
                             </a>
-                            <p>Pemilihan Online</p>
+                            <p>UMKM</p>
                         </div>
                         <div class="warga-menu">
                             <a href="{{ url('/writer')}}">
