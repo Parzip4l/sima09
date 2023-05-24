@@ -99,6 +99,12 @@
           <span class="link-title">Layanan Perizinan</span>
         </a>
       </li>
+      <li class="nav-item {{ active_class(['layanan-darurat']) }}">
+        <a href="{{ url('/layanan-darurat') }}" class="nav-link">
+          <i class="link-icon" data-feather="alert-triangle"></i>
+          <span class="link-title">Layanan Darurat</span>
+        </a>
+      </li>
       <li class="nav-item {{ active_class(['']) }}">
         <a href="{{ url('/') }}" class="nav-link">
           <i class="link-icon" data-feather="navigation-2"></i>

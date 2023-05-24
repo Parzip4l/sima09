@@ -133,13 +133,13 @@
                             </a>
                             <p>Kendaraan Saya</p>
                         </div>
-                        <div class="warga-menu disabled">
-                            <a href="#">
+                        <div class="warga-menu">
+                            <a href="{{ url('/layanan-darurat') }}">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/surat_pengantar.svg') }}" alt="">
                                 </div>
                             </a>
-                            <p>Surat Pengantar</p>
+                            <p>Layanan Darurat</p>
                         </div>
                     </div>
                 </div>

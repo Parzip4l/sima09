@@ -138,6 +138,9 @@ Route::get('/pengaduan/{id}', 'PengaduanController@show')->name('pengaduan.show'
 // UMKM
 Route::resource('/umkm', \App\Http\Controllers\UmkmController::class);
 
+// Layanan Darurat
+Route::resource('/layanan-darurat', \App\Http\Controllers\LayananDaruratController::class);
+
 Route::group(['prefix' => 'ui-components'], function(){
     Route::get('accordion', function () { return view('pages.ui-components.accordion'); });
     Route::get('alerts', function () { return view('pages.ui-components.alerts'); });
