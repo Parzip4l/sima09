@@ -237,9 +237,10 @@ Route::group(['prefix' => 'error'], function(){
     Route::get('500', function () { return view('pages.error.500'); });
 });
 
+Route::get('/coomingsoon', function () { return view('pages.general.underconstruction'); });
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
-    return "Cache is cleared";
+    return redirect()->back()->with('success', 'Cache Berhasil Di Bersihkan');
 });
 
 // 404 for undefined routes

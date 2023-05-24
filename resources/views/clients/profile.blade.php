@@ -164,6 +164,9 @@
                             <h6>2.4.0</h6>
                         </div>
                         <div class="item-profile py-2">
+                            <a href="{{ url('/clear-cache') }}" class="btn btn-danger">Clear Cache</a>
+                        </div>
+                        <div class="item-profile py-2">
                             <a href="{{ url('/termsandconditions') }}"><p class="text-abu title-profile">Terms and Conditions</p></a>
                         </div>
                         <div class="item-profile py-2">
@@ -175,7 +178,7 @@
         </div>
         <form action="{{ route('logout') }}" method="POST">
             @csrf
-            <button type="submit" class="btn btn-success logout">LOGOUT</button>
+            <button type="submit" class="btn btn-danger logout mb-3">LOGOUT</button>
         </form>
     </div>
 </div>

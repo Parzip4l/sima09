@@ -99,16 +99,16 @@
                             </a>
                             <p>UMKM</p>
                         </div>
-                        <div class="warga-menu disabled">
-                            <a href="#">
+                        <div class="warga-menu">
+                            <a href="{{ url('/coomingsoon') }}">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/wargadatang.svg') }}" alt="">
                                 </div>
                             </a>
                             <p>Warga Pendatang</p>
                         </div>
-                        <div class="warga-menu disabled">
-                            <a href="#">
+                        <div class="warga-menu">
+                            <a href="{{ url('/coomingsoon') }}">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/wargapindah.svg') }}" alt="">
                                 </div>
@@ -117,16 +117,16 @@
                         </div>
                     </div>
                     <div class="fitur-warga d-flex justify-content-between">
-                        <div class="warga-menu disabled">
-                            <a href="#">
+                        <div class="warga-menu">
+                            <a href="{{ url('/coomingsoon') }}">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/bansos.svg') }}" alt="">
                                 </div>
                             </a>
                             <p>Bantuan Sosial</p>
                         </div>
-                        <div class="warga-menu disabled">
-                            <a href="#">
+                        <div class="warga-menu">
+                            <a href="{{ url('/coomingsoon') }}">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/fitur_2.svg') }}" alt="">
                                 </div>
