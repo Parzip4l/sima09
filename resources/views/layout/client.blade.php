@@ -56,6 +56,8 @@
 
   gtag('config', 'G-QQDBM5J4BQ');
 </script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1726856243851504"
+     crossorigin="anonymous"></script>
   @stack('style')
 </head>
 <body data-base-url="{{url('/')}}">
