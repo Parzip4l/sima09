@@ -13,16 +13,15 @@
             <div class="card rounded mb-5">
                 <div class="card-body">
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1726856243851504"
-     crossorigin="anonymous"></script>
-<!-- Iklan Testing -->
+crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1726856243851504"
-     data-ad-slot="7571034847"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-1726856243851504"
+data-ad-slot="6046184273"></ins>
 <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
                     <div class="align-items-center justify-content-between mb-2">
                         <div class="berita-konten-wrap">
