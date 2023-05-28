@@ -21,7 +21,7 @@
                                 <div class="body-berita justify-content-between py-2">
                                     <div class="head-category d-flex justify-content-between">
                                         <div class="category-berita">
-                                            Umum
+                                            {{ $data->kategori }}
                                         </div>
                                         <div class="tanggal-berita align-self-center text-success">
                                             {{ $data->created_at->format('d M Y') }}

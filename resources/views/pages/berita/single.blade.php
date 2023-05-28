@@ -12,17 +12,6 @@
         <div class="d-md-block col-md-12 col-xl-12 left-wrapper">
             <div class="card rounded mb-5">
                 <div class="card-body">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1726856243851504"
-crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-1726856243851504"
-data-ad-slot="6046184273"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
                     <div class="align-items-center justify-content-between mb-2">
                         <div class="berita-konten-wrap">
                             <div class="featured-image-single">
@@ -30,7 +19,7 @@ data-ad-slot="6046184273"></ins>
                             </div>
                             <div class="body-berita justify-content-between py-2">
                                 <div class="category-berita">
-                                    Umum
+                                    {{ $berita->kategori }}
                                 </div>
                                 <h6 class="title-pengumuman"><a href="" class="judul-single">{{ $berita->judul }}</a></h6>
                             </div>

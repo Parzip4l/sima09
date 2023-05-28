@@ -29,8 +29,18 @@
           </div>
 
           <div class="mb-3">
+            <label for="exampleInputNumber1" class="form-label">Kategori</label>
+            <input type="text" class="form-control" name="kategori" value="{{$berita->kategori}}" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputNumber1" class="form-label">Tags</label>
+            <input type="text" class="form-control" name="tags" value="{{$berita->tags}}" required>
+          </div>
+
+          <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Deskripsi Singkat</label>
-            <textarea class="form-control" name="excerpt" id="" rows="10"></textarea>
+            <textarea class="form-control" name="excerpt" id="" rows="10">{{$berita->excerpt}}</textarea>
           </div>
 
           <div class="mb-3">
