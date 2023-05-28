@@ -228,7 +228,7 @@
                                 </div>
                                 <div class="body-berita justify-content-between py-2">
                                     <div class="category-berita">
-                                        {{ $berita->kategori }}
+                                        {{ $data->kategori }}
                                     </div>
                                     <h6 class="title-pengumuman"><a href="{{ route('berita.show', $data->judul) }}">{{ $data->judul }}</a></h6>
                                 </div>
