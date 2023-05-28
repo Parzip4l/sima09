@@ -13,8 +13,8 @@
             <div class="card rounded mb-3">
                 <div class="card-body">
                     <div class="list-berita-wrap">
-                        <div class="berita-item justify-content-between py-2 row">
-                            <div class="berita-konten-wrap col-md-3 col-sm-12" style="padding-bottom:10px;">
+                        <div class="berita-item justify-content-between py-2">
+                            <div class="berita-konten-wrap" style="padding-bottom:10px;">
                                 <div class="featured-image">
                                     <img src="{{ asset('images/' .$data->gambar) }}" alt="{{$data->judul}}" style="padding:0; border-radius:5px;">
                                 </div>
