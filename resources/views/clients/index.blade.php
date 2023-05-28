@@ -220,9 +220,9 @@
                 </div>
                 <div class="card-body">
                     <div class="list-berita-wrap">
-                        <div class="berita-item justify-content-between py-2">
+                        <div class="berita-item justify-content-between py-2 row">
                         @foreach ($beritas as $data)
-                            <div class="berita-konten-wrap">
+                            <div class="berita-konten-wrap col-md-4 col-sm-12">
                                 <div class="featured-image">
                                     <img src="{{ asset('images/' .$data->gambar) }}" alt="{{$data->judul}}">
                                 </div>
