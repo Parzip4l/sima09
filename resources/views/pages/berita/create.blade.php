@@ -24,22 +24,32 @@
         @csrf
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Judul Berita</label>
-            <input type="text" class="form-control" name="judul" require>
+            <input type="text" class="form-control" name="judul" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputNumber1" class="form-label">Kategori</label>
+            <input type="text" class="form-control" name="kategori" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputNumber1" class="form-label">Tags</label>
+            <input type="text" class="form-control" name="tags" required>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Deskripsi Singkat</label>
-            <textarea class="form-control" name="excerpt" id="" rows="10"></textarea>
+            <textarea class="form-control" name="excerpt" id="" rows="10" required></textarea>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Konten</label>
-            <textarea class="form-control" name="konten" id="tinymceExample" rows="10"></textarea>
+            <textarea class="form-control" name="konten" id="tinymceExample" rows="10" required></textarea>
           </div>
 
           <div class="mb-3">
             <label for="exampleInputNumber1" class="form-label">Featured Images</label>
-            <input type="file" class="form-control" name="gambar" require>
+            <input type="file" class="form-control" name="gambar" required>
           </div>
 
           <button class="btn btn-primary" type="submit">Simpan Data</button>
