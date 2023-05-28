@@ -2,9 +2,12 @@
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" /> 
 @endpush 
 @section('content') 
-<div class="header-single-wrap">
-    <div class="back-button">
-        <a href=""></a>
+<div class="backwrap bg-white p-4">
+    <div class="button d-flex">
+        <a href="{{url('/berita')}}" class="text-black">
+            <i class="link-icon" data-feather="chevron-left"></i>
+            Kembali
+        </a>
     </div>
 </div>
 <div class="notifikasi-body warga">
