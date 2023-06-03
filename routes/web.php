@@ -15,6 +15,7 @@ use Dompdf\Dompdf;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\UmkmController;
+use App\Http\Controllers\BeritaController;
 
 
 Route::get('/pdflaporan', [\App\Http\Controllers\LaporanzakatController::class, 'generatePdf']);
@@ -131,10 +132,12 @@ Route::get('termsandconditions', function () { return view('pages.general.terms'
 Route::get('privacyandsafety', function () { return view('pages.general.privacy'); });
 Route::get('chat', function () { return view('pages.apps.chat'); });
 Route::get('allfeatures', function () { return view('clients.allfeatures'); });
+Route::get('pagination', function () { return view('pages.ui-components.pagination'); });
 
 Route::get('pengumuman/{id}/download', 'PengumumanController@download')->name('pengumuman.download');
 Route::get('/berita/{id}', 'BeritaController@show')->name('berita.show');
 Route::get('/pengaduan/{id}', 'PengaduanController@show')->name('pengaduan.show');
+Route::post('/berita/search', 'BeritaController@search')->name('berita.search');
 
 // UMKM
 Route::resource('/umkm', \App\Http\Controllers\UmkmController::class);

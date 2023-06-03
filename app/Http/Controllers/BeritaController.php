@@ -22,13 +22,25 @@ class BeritaController extends Controller
             //render view with posts
             return view('pages.berita.index', compact('beritas','datalog'));
             }else if($user->level == '2'){
-                $beritas = Berita::orderByDesc('created_at')->take(15)->get();
+                $beritas = Berita::orderByDesc('created_at')->paginate(5);
                 $datalog = Log::where('model', 'berita')->take(5)->get(); 
                 return view('pages.berita.indexwarga', compact('beritas','datalog'));
             }
         }else{
             return redirect('pages.auth.login')->intended('login');
         }
+    }
+
+    public function search(Request $request)
+    {
+        $searchTerm = $request->input('search');
+
+        $beritas = Berita::where('judul', 'LIKE', "%$searchTerm%")
+            ->orWhere('kategori', 'LIKE', "%$searchTerm%")
+            ->latest()
+            ->paginate(10);
+
+        return view('pages.berita.indexwarga', compact('beritas', 'searchTerm'));
     }
 
     public function create()
