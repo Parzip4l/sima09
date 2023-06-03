@@ -14,6 +14,7 @@
 use Dompdf\Dompdf;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\UmkmController;
 
 
 Route::get('/pdflaporan', [\App\Http\Controllers\LaporanzakatController::class, 'generatePdf']);
@@ -137,6 +138,7 @@ Route::get('/pengaduan/{id}', 'PengaduanController@show')->name('pengaduan.show'
 
 // UMKM
 Route::resource('/umkm', \App\Http\Controllers\UmkmController::class);
+Route::put('/umkm/update-status/{umkm}', [UmkmController::class, 'updateStatus']);
 
 // Layanan Darurat
 Route::resource('/layanan-darurat', \App\Http\Controllers\LayananDaruratController::class);
@@ -247,3 +249,5 @@ Route::get('/clear-cache', function() {
 Route::any('/{page?}',function(){
     return View::make('pages.error.404');
 })->where('page','.*');
+
+

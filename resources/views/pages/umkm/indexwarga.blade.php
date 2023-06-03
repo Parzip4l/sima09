@@ -27,6 +27,23 @@
         </div>
     </div>
 </div>
+<div class="buttoncreate">
+    <div class="container">
+        <a href="{{ route('umkm.create') }}" class="btn btn-lg btn-primary w-100 mt-4 nb-2">Daftarkan UMKM</a>
+    </div>
+</div>
+<div class="container mt-2">
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+    @if (session('success'))
+        <div class="alert alert-success text-center">
+            {{ session('success') }}
+        </div>
+    @endif
+</div>
 <div class="iuran-wrap">
     <div class="container">
         <div class="d-md-block col-md-12 col-xl-12 mt-3">

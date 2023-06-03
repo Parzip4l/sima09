@@ -36,6 +36,7 @@
                 <th>No</th>
                 <th>Nama Toko</th>
                 <th>Nama Pemilik</th>
+                <th>Status</th>
                 <th>Aksi</th>
               </tr>
             </thead>
@@ -48,6 +49,7 @@
                 <td>{{ $nomor++}}</td>
                 <td>{{ $data->namatoko}}</td>
                 <td>{{ $data->namapemilik}}</td>
+                <td><span class="{{ $data->verifikasi == 'Belum Terverifikasi' ? 'text-danger' : 'text-success' }}">{{ $data->verifikasi}}</span></td>
                 <td>
                   <div class="d-flex">
                   <a href="{{ route('umkm.show', $data->id) }}" class="btn btn-primary me-1">Lihat Detail</a>
@@ -57,6 +59,7 @@
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
+                      <button class="btn btn-success btn-sm btn-update mx-1 {{ $data->verifikasi == 'Belum Terverifikasi' ? 'd-blok' : 'd-none' }}" data-umkm-id="{{ $data->id }}">Verifikasi</button>
                   </div>
                 </td>
               </tr>
@@ -94,6 +97,38 @@
             if (result.isConfirmed) {
                 $(this).unbind('submit').submit();
             }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+      var csrfToken = $('meta[name="csrf-token"]').attr('content');
+        // Menggunakan class .btn-update untuk menangani klik tombol Update
+        $('.btn-update').on('click', function() {
+            var umkmId = $(this).data('umkm-id');
+            
+            // Mengirim permintaan AJAX ke server
+            $.ajax({
+                url: '/umkm/update-status/' + umkmId,
+                type: 'PUT',
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                success: function(response) {
+                    // Mengupdate status pada tampilan DataTable setelah berhasil memperbarui data
+                    if (response.success) {
+                        // Misalnya, mengubah teks status menjadi "Verifikasi"
+                        var statusCell = $(this).closest('tr').find('td:nth-child(3)');
+                        statusCell.text('Terverifikasi');
+                        location.reload();
+                    }
+                },
+                error: function(xhr, status, error) {
+                    // Menangani error jika terjadi
+                    console.log(xhr.responseText);
+                }
+            });
         });
     });
 </script>

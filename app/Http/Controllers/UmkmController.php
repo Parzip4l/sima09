@@ -21,7 +21,7 @@ class UmkmController extends Controller
                 $data = Umkm::all();
                 return view ('pages.umkm.index', compact('data'));
             }else if($user->level == '2'){
-                $data = Umkm::all();
+                $data = Umkm::where('verifikasi', 'Terverifikasi')->get();
                 $count = count($data);
                 return view ('pages.umkm.indexwarga', compact('data','count'));
             }else{
@@ -38,9 +38,11 @@ class UmkmController extends Controller
 
             //render view with posts
                 return view('pages.umkm.create');
-            }else{
-                return redirect('pages.auth.login')->intended('login');
+            }else if($user->level == '2'){
+                return view('pages.umkm.createumkm');
             }
+        }else{
+            return redirect('pages.auth.login')->intended('login');
         }
     }
 
@@ -66,6 +68,7 @@ class UmkmController extends Controller
         $umkm->shopee = $request->input('shopee');
         $umkm->grab = $request->input('grab');
         $umkm->whatsapp = $request->input('whatsapp');
+        $umkm->verifikasi = $request->input('verifikasi');
         $umkm->save();
 
         $new_value = $umkm->attributesToArray();  
@@ -78,8 +81,14 @@ class UmkmController extends Controller
             'user_name' => $namauser,
             'new_values' => json_encode($new_value)
         ]);
-        
-        return redirect()->route('umkm.index')->with('success','UMKM berhasil ditambahkan.');
+
+        if($user = Auth::user()){
+            if($user->level == '1'){
+                 return redirect()->route('umkm.index')->with('success','UMKM berhasil ditambahkan.');
+            } else if($user->level == '2'){
+                return redirect()->route('umkm.index')->with('success','UMKM berhasil didaftarkan, Tunggu Verifikasi Dari Admin Agar Toko anda Muncul di Menu UMKM.');
+            }
+        }
     }
 
     public function edit($id)
@@ -136,6 +145,14 @@ class UmkmController extends Controller
                 return redirect('pages.auth.login')->intended('login');
             }
         }
+    }
+
+    public function updateStatus(Umkm $umkm)
+    {
+        $umkm->verifikasi = 'Terverifikasi';
+        $umkm->save();
+
+        return response()->json(['success' => true]);
     }
 
     public function destroy($id)
