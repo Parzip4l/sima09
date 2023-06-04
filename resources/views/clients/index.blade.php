@@ -113,7 +113,7 @@
                             <p>UMKM</p>
                         </div>
                         <div class="warga-menu">
-                            <a href="{{ url('/writer')}}">
+                            <a href="{{ url('/coomingsoon')}}">
                                 <div class="image-fitur">
                                     <img src="{{ asset('assets/icons/service-11.svg') }}" alt="">
                                 </div>
